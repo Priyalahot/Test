@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Flex</title>
+    <style>
+        body{
+            background-color: black;
+            
+        }
+        
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: 20px;
+            padding: 80px;
+            border: 5px solid white;
+            background-color: red;
+            margin-top: 15%;
+    
+        }
+        .item{
+            display: flex;
+            background-color: green;
+            height: 80px;
+            width: 23%;
+            
+        }
+        #item2{
+            align-items: center;
+        }
+        #item3{
+            justify-content: flex-end;
+            align-items: flex-end;
+        }
+
+    </style>
+</head>
+<body>
+    
+     <div class="container">
+        <div id="item1" class="item">child 1</div>
+        <div id="item2" class="item">child 2</div>
+        <div id="item3" class="item">child 3</div>
+    </div>
+
+
+</body>
+</html>
