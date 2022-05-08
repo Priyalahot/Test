@@ -1,0 +1,236 @@
+body{
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: large;
+    background-color: rgb(248, 240, 242);
+}
+.container{
+width: 90%;
+margin: 2% 0;
+padding: 6%;
+
+}
+.navbar {
+    position: fixed;
+    top: 0%;
+    /* background: linear-gradient(15deg,white ,rgb(241, 183, 188),white); */
+    background: linear-gradient(15deg,white ,#000000,white);
+    /* background-color: rgb(248, 201, 159); */
+    width: 100%;
+    box-shadow: 0 0 10px grey;
+}
+ul{
+    list-style-type: none;
+    font-weight: 800;
+    margin-left: 30%;
+    margin-top: 0%;
+}
+li{
+    float: left;
+
+}
+li a{
+    display: block;
+    text-decoration: none;
+    padding: 25px;
+    /* color: black; */
+    color: white;
+   
+}
+.navbar li a:hover{
+    background-color: rgb(235, 213, 215);
+    /* color: white; */
+    color: black;
+}
+.banner{
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    /* background-color:rgb(70, 67, 67); */
+    background: linear-gradient(45deg,rgb(54, 48, 48) ,#000000,white);
+   
+}
+.banner .content{
+    padding:12% 0;
+}
+ .banner .image .img{
+     /* border-radius: 50%; */
+     box-shadow: 0 0 10px rgb(190, 184, 185);
+    width: 400px;
+    height: 410px;
+    margin-top: 9%;
+    margin-left:9% ;
+}
+.banner .content .title{
+    font-size: 50px;
+    color: pink;
+    margin-top: 10%;
+    margin-bottom: 0%;
+    
+}
+.banner .content .desc{
+    font-size: 26px;
+    color: white;
+    margin-top: 6px;
+    text-justify: auto;
+
+}
+.banner .content .btn{
+    background-color: #000000;
+    padding: 2% 5%;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 700;
+    border: 1px solid pink ;
+}
+.banner .content .btn:hover{
+    background-color:pink;
+    color: black;
+}
+/* about */
+.about{
+    display: grid;
+    background: linear-gradient(45deg,rgb(54, 48, 48) ,#000000,white);
+    margin-top: 0;
+    
+    /* grid-template-columns: repeat(2,50%); */
+}
+.about .inner{
+    box-shadow: 0 0 10px pink;
+    padding: 2% 2%;
+   
+}
+.about .content .title{
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    color: pink;
+}
+.about .content .desc{
+    font-size: 19px;
+    color: white;
+}
+/* skills */
+.skills {
+    background: linear-gradient(45deg,rgb(54, 48, 48) ,#000000,white);
+}
+.skills .content{
+    /* font-family: "lato" sans-serif; */
+    padding: 2%;
+    /* background-color: #dcdfb7; */
+}
+.skills .content .title{
+    font-size: 28px;
+    font-weight: 800;
+    text-align: center;
+    color: pink;
+}
+.skills .grid-container{
+    display: grid;
+    grid-template-columns:  repeat(4,25%);
+    grid-gap:10px 20px;
+}
+.skills .grid-container .grid-item{
+    border: 1px solid white;
+    background-color: white;
+    padding: 7% 3%;
+    border-radius: 8px;
+    border-bottom: 5px solid pink;
+    
+}
+.skills .grid-container .grid-item .fa-brands{
+    margin-right: 8%;
+    font-size: 19px;
+    color:pink;
+    }
+    /* contact */
+    .contact{
+        background-color: rgb(8, 7, 7);
+        margin-bottom: 0%;
+        /* background: linear-gradient(45deg,rgb(54, 48, 48) ,#000000,white); */
+    }
+    .contact .content{
+        display: grid;
+        grid-template-columns: repeat(3,33%);
+        grid-gap:10px 20px;
+    }
+    .contact .content .grid-item{
+    border: 1px solid white;
+    
+    background: linear-gradient(45deg,rgb(54, 48, 48) ,#000000,white);
+    padding: 7% 3%;
+    height: 150px;
+    border-radius: 8px;
+    border-bottom: 5px solid #6d8363;
+    text-align: center;
+    }
+    .contact .content .grid-item .fa-solid{
+        margin-right: 8%;
+font-size: 60px;
+color: pink;
+
+
+}
+.contact .title{
+    font-size: 28px;
+    font-weight: 800;
+    text-align: center;
+    color: pink;
+    margin-top: 0;
+}
+.contact .content .grid-item .head{
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 0;
+    color: pink;
+}
+
+.contact .content .grid-item .para{
+    color: white;
+}
+
+.contact .form {
+    margin-top: 5%;
+   
+}
+.contact .form input ,textarea {
+    background-color: black;
+    padding: 20px 20px;
+    width: 63%;
+    margin-bottom: 2%;
+    box-shadow: 0 0 5px pink;
+   
+}
+.btn{
+    background-color: #000000;
+    padding: 1% 5%;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 700;
+    border: 1px solid pink ;
+}
+.btn:hover{
+    background-color:pink;
+    color: black;
+}
+.footer{
+   background-color: pink;
+   padding: 10px 10px;
+   width: 100%;
+   text-align: center;
+}
+.footer h1{
+    margin-top: 0;
+    text-align: center;
+    padding: 20px 20px;
+}
+.footer .social-sites .footer-icons .icon .fa-brands{
+    margin-right: 2%;
+font-size: 30px;
+color: black;
+
+
+}
+   
