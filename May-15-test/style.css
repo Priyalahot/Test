@@ -1,0 +1,18 @@
+.square-container{
+    background-color: rgb(24, 129, 155);
+    height: 500px;
+    width: 500px;
+    margin: 100px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+.circle{
+    background-color: rgb(121, 196, 214);
+    border-radius: 50%;
+    height: 400px;
+    width: 400px;
+   
+
+}
