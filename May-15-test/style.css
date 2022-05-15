@@ -1,7 +1,7 @@
 .square-container{
     background-color: rgb(24, 129, 155);
-    height: 500px;
-    width: 500px;
+    height: 400px;
+    width: 400px;
     margin: 100px auto;
     display: flex;
     align-items: center;
