@@ -1,8 +1,13 @@
 let n = parseInt(prompt("Enter number"));
+let counter=0;
 
-for(let i=1;i<=n;i++){
+
+for(let i=1;i<=1000;i++){
     if(primeNumber(i)){
+        counter++;
+        if(counter == n){
         console.log(i);
+        }
     }
 }
 
@@ -12,11 +17,10 @@ function primeNumber(num){
     }
     for(let i=2;i<num;i++){
         if(num % i==0){
-
-            // number not prime
             return false;
         }
     }
     return true;
 }
+
 
