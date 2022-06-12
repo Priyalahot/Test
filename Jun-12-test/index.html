@@ -1,1 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>June 12 test</title>
+</head>
+
+<body>
+    <h1>Inspect to see output</h1>
+    <!--Q.1.write a function to check if geekster exists in your array var list = ['geek', 'geekster', 'geeky'];
+        If it exists  add some code to find the index of geekster and remove that item. -->
+    <script>
+
+        let arr1 = ['geek', 'geekster', 'geeky'];
+        let l = arr1.length;
+        console.log(arr1);
+        function removeIndexElement(arr1, remove_index) {
+            for (let i = remove_index; i < l - 1; i++) {
+
+
+                arr1[i] = arr1[i + 1]
+            }
+            arr1.pop();
+            console.log(arr1);
+        }
+
+        function findArrayElement(arr1) {
+            for (let i = 0; i <= arr1.length - 1; i++) {
+                if (arr1[i] === 'geekster') {
+                    removeIndexElement(arr1, i);
+                }
+            }
+        }
+        findArrayElement(arr1);
+    </script>
+
+    <!-- Q.2.In how many ways can we loop in an array describe each with an example ? -->
+    <script>
+        console.log("for loop");
+
+        // using for loop
+        let arr = ['a', 'b', 'c', 'd', 'e'];
+        for (i = 0; i <= arr.length - 1; i++) {
+            console.log(arr[i]);
+        }
+    </script>
+    <script>
+        console.log("while loop");
+        // using while loop
+        let arrA = [1, 2, 3, 4];
+        let i = 0;
+        while (i < arrA.length) {
+            console.log(arrA[i]);
+            i++;
+        }
+    </script>
+    <script>
+        console.log("for in loop");
+        // Using for in loop
+        let arrB = ['A', 'B', 'C', 'D'];
+        for (let i in arrB) {
+            console.log(i);
+        }
+
+    </script>
+    <script>
+        console.log("for of loop");
+        // using for of loop
+        let arrC = ['e', 'f', 'g', 'h'];
+        for (let i of arrC) {
+            console.log(i);
+        }
+    </script>
+
+    <!-- Q.3.What is the length of these arrays
+            A. var arr1 = [,,,]; 
+            B. var arr2 = new Array(3)
+            C. var arr3 = [1,2,3,4,5]
+            D. var array = [ [1,2,3], [4,5,6]  ];
+            E. var array[0].length = [ [1,2,3], [4,5,6]  ]; -->
+
+    <!-- Ans
+            length of A = 3
+            length of B = 3
+            length of c = 5
+            length of D = 2
+            length of E = 3
+        -->
+
+    <!-- Q.4 Find the index position of b in this array var arr= ['a','b','c','d']; -->
+    <script>
+        var Arr = ['a', 'b', 'c', 'd'];
+        function findPositonElement(Arr) {
+            for (let i = 0; i <= Arr.length - 1; i++) {
+                if (Arr[i] === 'b') {
+                    console.log("position of b is " + i);
+                }
+            }
+        }
+        findPositonElement(Arr);
+    </script>
+
+    <!--Q.5 What will be returned if you look for the index of something that does not exist? -->
+    <!-- Ans :
+            if we try to get index of something that does not exist it will print undefined -->
+    <!-- example -->
+    <script>
+        let a = [1, 2, 3];
+        console.log(a[3]);
+    </script>
+
+    <!--Q.6 Find the nth largest element in a sorted array -->
+    <script>
+        let arr6 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+        let num = parseInt(prompt("Enter number"));
+        function nthLargestElement(num) {
+            last_index = arr6.length - 1;
+            console.log(arr6[last_index - (num - 1)]);
+        }
+        nthLargestElement(num)
+    </script>
+
+
+</body>
+
+</html>
